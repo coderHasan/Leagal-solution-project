@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Daisy Ui Link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font-awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Googlr Font CDN-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+
+
+    <!-- Tailwind config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            display : ["EB Garamond", "serif",]
+          },
+          extend: {
+            colors: {
+              primaryBg: "#B68C5A",
+            },
+            fontFamily: {
+              
+            }
+          },
+        },
+      };
+    </script>
+
+    <style>
+
+    </style>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="container mx-auto md:px-10">
+        <div class="navbar bg-base-100 mb-8">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              >
+                <li><a>Home</a></li>
+                <li>
+                  <a>Services</a>
+                  <ul class="p-2">
+                    <li><a>Services 1</a></li>
+                    <li><a>Services 2</a></li>
+                  </ul>
+                </li>
+                <li><a>Item 3</a></li>
+              </ul>
+            </div>
+            <a class="btn btn-ghost text-xl hover:bg-transparent p-0">
+              <img src="./images/logo2.png" alt="" />
+            </a>
+          </div>
+
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 items-center">
+              <li><a href="#">Home</a></li>
+              <li>
+                <a href="#"
+                  >Services <i class="text-sm fa-solid fa-chevron-right"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#">Cases <i class="fa-solid fa-chevron-right"></i></a>
+              </li>
+              <li>
+                <a href="#">Blog <i class="fa-solid fa-chevron-right"></i></a>
+              </li>
+              <li>
+                <a href="#"
+                  >Contact us <i class="fa-solid fa-chevron-right"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="navbar-end flex items-center">
+            <!-- <a class="btn bg-primaryBg text-white  border-none hidden lg:block">Free Consultation</a> -->
+            <button
+              class="btn bg-primaryBg text-white hover:text-black hidden lg:block mt-0"
+            >
+              Consultation
+            </button>
+          </div>
+
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
+          </div>
+        </div>
+
+        <!-- Banner -->
+
+        <div
+          class="hero py-10 rounded-lg overflow-hidden bg-gradient-to-l from-black to-transparent "
+          style="
+            background-image: url(./images/banner.png);
+          "
+        >
+          <div class="hero-overlay bg-opacity-60"></div>
+          <div class="hero-content text-neutral-content text-center flex flex-col">
+            <div class="max-w-md">
+              <h1 class="mb-5 text-4xl font-bold font-display md:w-9/12 mx-auto">We Provide Effective Legal Solutions</h1>
+              <p class="mb-5">
+                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+              </p>
+              
+            </div>
+
+            <div class="flex gap-5 w-full">
+              <input class="w-full px-3 rounded-md" type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+              <button class="btn bg-primaryBg border-none px-6 text-white hover:text-black ">Search</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
